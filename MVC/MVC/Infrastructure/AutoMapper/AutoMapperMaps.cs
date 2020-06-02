@@ -28,8 +28,9 @@ namespace Generic.AutoMapper
                 // Page to Navigation Item
                 cfg.CreateMap<TreeNode, NavigationItem>()
                 .BeforeMap((s, d) => d.LinkTarget = "_self")
+                .ForMember(dest => dest.Children, opt => opt.Ignore())
                 .ForMember(dest => dest.LinkText, opt => opt.MapFrom(src => src.DocumentName))
-                .ForMember(dest => dest.LinkTarget, opt => opt.MapFrom(src => src.RelativeURL))
+                .ForMember(dest => dest.LinkHref, opt => opt.MapFrom(src => src.RelativeURL))
                 .ForMember(dest => dest.LinkPagePath, opt => opt.MapFrom(src => src.NodeAliasPath))
                 .ForMember(dest => dest.LinkPageGuid, opt => opt.MapFrom(src => src.NodeGUID))
                 .ForMember(dest => dest.LinkPageID, opt => opt.MapFrom(src => src.NodeID));

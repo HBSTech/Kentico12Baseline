@@ -10,7 +10,13 @@
 }
 @{Html.RenderAction("Breadcrumbs", "Navigation");}
 
-@Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())
+<div class="row">
+    <div class="col-sm-3">
+        @{Html.RenderAction("SecondaryNavigation", "Navigation");}
+    </div>
+    <div class="col-sm-9">
+        @Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())
+    </div>
+</div>
 
-<p>Testing Navigation</p>
-@{Html.RenderAction("SecondaryNavigation", "Navigation");}
+
