@@ -1,0 +1,16 @@
+﻿@model GenericPage
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    PageMetaData MetaData = Model.GetPageTypeComponent<PageMetaData>(PageMetaData.CLASS_NAME.Replace(".", "_"));
+    ViewBag.Title = (MetaData != null ? MetaData.Title : Model.DocumentName);
+}
+@section head {
+    @{Html.RenderPartial("Components/PageMetaData", MetaData);}
+    @{Html.RenderAction("BreadcrumbJsonLD", "Navigation");}
+}
+@{Html.RenderAction("Breadcrumbs", "Navigation");}
+
+@Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())
+
+<p>Testing Navigation</p>
+@{Html.RenderAction("SecondaryNavigation", "Navigation");}

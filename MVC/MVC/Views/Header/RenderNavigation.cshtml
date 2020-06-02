@@ -1,0 +1,10 @@
+﻿@using Generic.Models;
+@model IEnumerable<NavigationItem>
+
+
+<ul class="navbar-nav">
+    @foreach (var NavItem in Model)
+    {
+        Html.RenderPartial("RenderNavigationItem", NavItem);
+    }
+</ul>

@@ -1,0 +1,11 @@
+  <appSettings>
+    <add key="CMSProgrammingLanguage" value="C#" />
+    <add key="WS.webservice" value="http://localhost/WebService/webservice.asmx" />
+    <add key="CMSTrialKey" value="" />
+    <add key="ChartImageHandler" value="storage=session;timeout=20;" />
+    <add key="PageInspector:ServerCodeMappingSupport" value="Disabled" />
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+    <add key="CMSApplicationGuid" value="" />
+    <add key="CMSApplicationName" value="" />
+    <add key="CMSHashStringSalt" value="" />
+  </appSettings>

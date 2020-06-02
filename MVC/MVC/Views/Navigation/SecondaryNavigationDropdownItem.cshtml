@@ -1,0 +1,14 @@
+﻿@model Generic.Models.NavigationItem
+
+<li class="@(Model.IsCurrentPage(ViewBag.NavigationCurrentPagePath) ? "active" : "") @Model.LinkCSSClass">
+    <a title="@Model.LinkAlt" onclick="@Model.LinkOnClick" href="@Model.LinkHref">@Html.Raw(Model.LinkText)</a>
+    @if (Model.Children.Count > 0)
+    {
+        <ul>
+            @foreach (var ChildItem in Model.Children)
+            {
+                Html.RenderPartial("SecondaryNavigationDropdownItem", ChildItem);
+            }
+        </ul>
+    }
+</li>

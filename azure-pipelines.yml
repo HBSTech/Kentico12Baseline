@@ -1,0 +1,62 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+#!!! This build pipeline references a secret variable named ‘ftpPassword’.  !!!
+# Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. 
+# See https://go.microsoft.com/fwlink/?linkid=865972
+
+# specific path build
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - MVC/*
+    
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/MVC.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Get-Location
+      Get-ChildItem -Path ./ -Filter *.template -Recurse -File -Name | ForEach-Object {
+          $newName = $_.Replace(".template", ".config")
+          $fileName = Split-Path $newName -leaf
+          Write-Host $fileName ">" $newName
+          Rename-Item $_ -NewName $fileName
+      }
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)" /p:PrecompileBeforePublish=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: VSTest@2
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

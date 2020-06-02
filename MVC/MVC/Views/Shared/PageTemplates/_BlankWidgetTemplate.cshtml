@@ -1,0 +1,11 @@
+﻿@model Kentico.PageBuilder.Web.Mvc.ComponentViewModel
+@{
+    ViewBag.Title = "Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    PageMetaData MetaData = Model.Page.GetPageTypeComponent<PageMetaData>(PageMetaData.CLASS_NAME.Replace(".", "_"));
+}
+@section head {
+    @{Html.RenderPartial("Components/PageMetaData", MetaData);}
+}
+
+@Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets(AddZoneWidgets: true))

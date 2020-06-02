@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.navbar-nav {
+    flex-flow: row;
+
+    .nav-item {
+        padding: 20px;
+        text-align: center;
+    }
+}

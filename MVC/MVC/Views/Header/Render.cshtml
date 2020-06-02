@@ -1,0 +1,10 @@
+﻿@model HeaderViewModel
+@{
+    ViewBag.Title = "Render";
+    Layout = Html.LayoutIfEditMode("~/Views/Shared/_layout_NoHeader.cshtml");
+}
+
+<div>
+    @Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())
+    @*{ KenticoRichTextWidgetController.IDENTIFIER, StaticTextWidgetProperties.IDENTIFIER }*@
+</div>

@@ -1,0 +1,23 @@
+﻿[
+  {
+    "outputFile": "Content/css/EditMode.css",
+    "inputFile": "Content/scss/EditMode.scss",
+    "options": {
+      "sourceMap": true
+    }
+  },
+  {
+    "outputFile": "Content/css/Custom.css",
+    "inputFile": "Content/scss/Custom.scss",
+    "minify": {
+      "enabled": true
+    },
+    "options": {
+      "sourceMap": true
+    }
+  },
+  {
+    "outputFile": "Content/js/Custom.es5.js",
+    "inputFile": "Content/js/Custom.js"
+  }
+]

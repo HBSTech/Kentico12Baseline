@@ -1,0 +1,49 @@
+﻿@using Models.InlineEditors
+@using Generic.Models.InlineEditors
+@model ImageUploaderEditorViewModel
+
+@{
+    string GetContainerClass()
+    {
+        if (Model.HasImage)
+        {
+            return "uploader-container";
+        }
+
+        return Model.UseAbsolutePosition ? "uploader-empty-container absolute" : "uploader-empty-container";
+    }
+
+    string GetMessagePositionClass()
+    {
+        switch (Model.MessagePosition)
+        {
+            case PanelPositionEnum.Bottom:
+                return "bottom";
+
+            case PanelPositionEnum.Top:
+                return "top";
+
+            default:
+                return "center";
+        }
+    }
+}
+@using (Html.Kentico().BeginInlineEditor("image-uploader-editor", Model.PropertyName,
+    new
+    {
+        @class = "image-uploader-editor",
+        data_url = Model.GetDataUrl(),
+        data_file_type = Model.ImageType == ImageTypeEnum.MediaFile ? "media" : "attachment"
+    }))
+{
+    <div class="@GetContainerClass()">
+        <div class="uploader">
+            <div class="dz-message @GetMessagePositionClass()">
+                <i class="icon-arrow-up-line"></i>
+                <div>
+                    @Html.GetUIString(Model.ImageType == ImageTypeEnum.MediaFile ? "Generic.InlineEditors.ImageMediaUploader.DropText" : "Generic.InlineEditors.ImageAttachmentUploader.DropText")
+                </div>
+            </div>
+        </div>
+    </div>
+}

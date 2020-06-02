@@ -1,0 +1,15 @@
+﻿@model Footer
+@{
+    ViewBag.Title = "Render";
+    Layout = Html.LayoutIfEditMode("~/Views/Shared/_layout_NoFooter.cshtml");
+    string CopyrightYear = "@"+DateTime.Now.Year.ToString();
+}
+
+<footer>
+        <div >
+            @Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())
+        </div>
+        <div class="PoweredBy">
+            @CopyrightYear Baseline - all rights reserved.&nbsp;&nbsp;<a href="https://www.kentico.com" title="Kentico" rel="nofollow">Powered by Kentico CMS</a>
+        </div>
+</footer>

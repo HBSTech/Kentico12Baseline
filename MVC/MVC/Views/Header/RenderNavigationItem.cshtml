@@ -1,0 +1,35 @@
+﻿@using Generic.Models;
+@model NavigationItem
+
+@if (Model.IsMegaMenu)
+{
+    <li class="nav-item dropdown mega-menu @Model.LinkCSSClass @(Model.IsCurrentPage(ViewBag.NavigationCurrentPagePath) ? "active" : "")">
+        <a href="#" class="nav-link" title="@Model.LinkAlt" onclick="@Model.LinkOnClick" data-toggle="dropdown">
+            @Html.Raw(Model.LinkText)
+        </a>
+        <div class="dropdown-menu">
+            @Html.PartialWidgetPage(Model.LinkPagePath, PathIsNodeAliasPath: true, stripSession: false)
+        </div>
+    </li>
+}
+else if (Model.Children.Count == 0)
+{
+    <li class="nav-item @Model.LinkCSSClass @(Model.IsCurrentPage(ViewBag.NavigationCurrentPagePath) ? "active" : "")">
+        <a class="nav-link" title="@Model.LinkAlt" onclick="@Model.LinkOnClick" href="@Model.LinkHref">@Html.Raw(Model.LinkText)</a>
+
+    </li>
+}
+else
+{
+    <li class="nav-item dropdown @Model.LinkCSSClass @(Model.IsCurrentPage(ViewBag.NavigationCurrentPagePath) ? "active" : "")">
+        <a class="nav-link" title="@Model.LinkAlt" href="#" onclick="@Model.LinkOnClick" data-toggle="dropdown">
+            @Html.Raw(Model.LinkText)
+        </a>
+        <ul class="dropdown-menu">
+            @foreach (var ChildItem in Model.Children)
+            {
+                Html.RenderPartial("RenderNavigationDropdownItem", ChildItem);
+            }
+        </ul>
+    </li>
+}

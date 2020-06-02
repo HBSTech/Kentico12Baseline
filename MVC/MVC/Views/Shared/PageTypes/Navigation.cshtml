@@ -1,0 +1,5 @@
+﻿@{
+    ViewBag.Title = "Navigation";
+    Layout = Html.LayoutIfEditMode("~/Views/Shared/_layout_Navigation.cshtml");
+}
+@Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets())

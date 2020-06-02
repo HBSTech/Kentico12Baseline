@@ -1,0 +1,78 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title class="has_page_title">Kentico Boilerplate - HBS</title>
+
+    <!-- JQUERY, added in header so available anywhere -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/HeaderJS")
+    @Styles.Render("~/bundles/HeaderStyles")
+
+    @RenderSection("head", required: false)
+
+    @if (EnvironmentHelper.PageBuilderEnabled)
+    {
+        if (EnvironmentHelper.IsEditMode)
+        {
+            <!-- Edit Mode -->
+            @Html.Kentico().PageBuilderStyles()
+            <link href="~/Content/css/EditMode.min.css" rel="stylesheet" />
+        }
+        else
+        {
+            @*Page builder styles manually added here*@
+        }
+    }
+</head>
+<body>
+
+    <header>
+        @Html.PartialWidgetPage("/Header/Render/", stripSession: false)
+        @{Html.RenderAction("RenderNavigation", "Header");}
+        @{OutputCacheHelper.AddCacheDependency($"nodes|{OutputCacheHelper.CurrentSiteName()}|Generic.Header|all"); }
+    </header>
+
+    @RenderBody()
+
+    @Html.PartialWidgetPage("/Masterpage/Footer", PathIsNodeAliasPath: true, stripSession: false)
+    @{OutputCacheHelper.AddCacheDependency($"node|{OutputCacheHelper.CurrentSiteName()}|/Masterpage/Footer"); }
+
+    <!-- Includes the jQuery Validator for MVC-->
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $.validator.setDefaults({ ignore: null });
+    </script>
+
+    <!-- Includes the AJAX Unobtrusive for MVC -->
+    @Scripts.Render("~/bundles/jquery-unobtrusive-ajax")
+
+    @if (EnvironmentHelper.PageBuilderEnabled)
+    {
+        if (EnvironmentHelper.IsEditMode)
+        {
+            <!-- Edit mode-->
+            @Html.Kentico().PageBuilderScripts();
+            @Scripts.Render("~/Scripts/MyComponentsConfiguration.js")
+        }
+        else
+        {
+            <script src="/Kentico/Scripts/forms/updatableFormHelper.js"></script>
+            <script src="/Kentico/Content/FormComponents/USPhone/inputmask.js"></script>
+        }
+    }
+
+    <!-- Javascripts File -->
+    @Scripts.Render("~/bundles/FooterJS")
+
+    @RenderSection("bottom", required: false)
+</body>
+</html>

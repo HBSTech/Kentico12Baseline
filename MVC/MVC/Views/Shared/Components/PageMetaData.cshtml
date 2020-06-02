@@ -1,0 +1,15 @@
+﻿@model CMS.DocumentEngine.Types.Component.PageMetaData
+@if (Model != null)
+{
+    ViewBag.Title = Model.Title;
+    <meta name="description" content="@Model.Description">
+    <meta name="keywords" content="@Model.Keywords">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="@Model.Title" />
+    if (!string.IsNullOrWhiteSpace(Model.ThumbnailSmall))
+    {
+        <meta property="og:image" content="@Url.GenerateAbsoluteUrl(Model.ThumbnailSmall)" />
+    }
+    <meta property="og:description" content="@Model.Description" />
+}

@@ -1,0 +1,12 @@
+﻿@model Home
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    PageMetaData MetaData = Model.GetPageTypeComponent<PageMetaData>(PageMetaData.CLASS_NAME.Replace(".", "_"));
+    ViewBag.Title = (MetaData != null ? MetaData.Title : Model.DocumentName);
+}
+@section head {
+    @{Html.RenderPartial("Components/PageMetaData", MetaData);}
+}
+
+<h1>Home</h1>
+@Html.Kentico().EditableArea("main")

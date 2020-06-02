@@ -1,0 +1,1 @@
+powershell.exe -executionpolicy remotesigned -File "CI-Restore.ps1" -Path "C:\Path\To\Site\CMS" -AppPoolName "MySiteAppPoolName"
