@@ -27,7 +27,8 @@
 <body>
 
     <header>
-        @Html.PartialWidgetPage("/Header/Render/", stripSession: false)
+        @Html.PartialWidgetPage("/Masterpage/Header", PathIsNodeAliasPath: true, stripSession: false)
+        @{OutputCacheHelper.AddCacheDependency($"nodes|{OutputCacheHelper.CurrentSiteName()}|Generic.Header|all"); }
         @{Html.RenderAction("RenderNavigation", "Header");}
     </header>
 

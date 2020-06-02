@@ -1039,7 +1039,6 @@
     <Content Include="Views\DynamicPageTemplate\UnregisteredTemplate.cshtml" />
     <Content Include="Views\Shared\PageTypes\Navigation.cshtml" />
     <Content Include="Views\Shared\_layout_Navigation.cshtml" />
-    <Content Include="Views\Header\Render.cshtml" />
     <Content Include="Views\Header\RenderNavigation.cshtml" />
     <Content Include="Views\Header\RenderNavigationDropdownItem.cshtml" />
     <Content Include="Views\Header\RenderNavigationItem.cshtml" />
@@ -1087,6 +1086,7 @@
     <Content Include="Views\Shared\FormComponents\_DoubleInputFormComponent.cshtml" />
     <Content Include="Views\Shared\FormComponents\_DecimalInputFormComponent.cshtml" />
     <Content Include="Views\Shared\FormComponents\_GuidInputFormComponent.cshtml" />
+	<Content Include="Views\Shared\PageTypes\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />

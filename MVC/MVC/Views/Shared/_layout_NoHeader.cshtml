@@ -33,8 +33,9 @@
     }
 </head>
 <body>
-    @RenderBody()
-
+    <header>
+        @RenderBody()
+    </header>
     @Html.PartialWidgetPage("/Masterpage/Footer", PathIsNodeAliasPath: true, stripSession: false)
     @{OutputCacheHelper.AddCacheDependency($"node|{OutputCacheHelper.CurrentSiteName()}|/Masterpage/Footer"); }
 
@@ -44,10 +45,9 @@
     <script type="text/javascript">
         $.validator.setDefaults({ ignore: null });
     </script>
-    ll
+    
     <!-- Includes the AJAX Unobtrusive for MVC -->
     @Scripts.Render("~/bundles/jquery-unobtrusive-ajax")
-    l
     @if (EnvironmentHelper.PageBuilderEnabled)
     {
         if (EnvironmentHelper.IsEditMode)
