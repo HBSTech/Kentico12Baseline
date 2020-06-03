@@ -1116,6 +1116,7 @@
     <Compile Include="Infrastructure\Caching\Implementations\OutputCacheDependencies.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IContentItemMetadataProvider.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IOutputCacheDependencies.cs" />
+	<Compile Include="Library\Generic_LoaderModule.cs" />													 
     <Compile Include="Library\Helpers\ObjectQueryExtensions.cs" />
     <Compile Include="Library\ValidationAttributes\LocalizedCurrentUserPasswordValidAttribute.cs" />
     <Compile Include="Library\ValidationAttributes\LocalizedPasswordPolicyAttribute.cs" />
