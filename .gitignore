@@ -11,3 +11,4 @@ MVC/MVC/obj/*
 KenticoAdmin/packages/*
 KenticoAdmin/CMS/bin/*
 KenticoAdmin/CMS/obj/*
+!MVC/MVC/App_Data/*

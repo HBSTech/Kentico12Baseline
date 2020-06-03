@@ -266,5 +266,4 @@ SessionState.config
 AppSettings.config
 
 /App_Data/
-!/App_Data/Global/
-
+!/App_Data/Global/*
