@@ -72,13 +72,13 @@ Where various features for Kentico are enabled. 
 
 The Routing priority contains Kentico's Route handler, MVC Route attribute priority, Sitemap and Home Routes, Dynamic Routing, 404, Default Route, and a catch all for the not found.
 
-### [BundleConfig.cs](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/App_Start/Bundles.cs)
+### [Bundle.cs](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/App_Start/Bundles.cs)
 
 Bundles have been split and placed in the _Layout, the ones you will mainly configure are the `RegisterFooterJSBundle`, `RegisterHeaderJSBundle`, and `RegisterHeaderStyleBundle`.
 
 ### Dependency Injection (AutoFac)
 
-Dependency Injection may be foreign to some readers as it was to me a while back.  Dependency Injection is when the system automatically "Injects" some dependent code you need.  An example, Is your [UserController](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Controllers/Administrative/AccountController.cs) may need a helper that can get the [current IUserInfo](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Repositories/Interfaces/IUserRepository.cs), [register a user](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Services/Interfaces/IUserService.cs), or do other similar operations.  The [UserController](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Controllers/Administrative/AccountController.cs) requests these classes (in the form of an Interface), and the Dependency Injector finds the current class that implements the interface (like [this class](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Repositories/Implementations/KenticoUserRepository.cs) and [this one](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Services/Implementation/KenticoUserService.cs)) and injects it in.
+Dependency Injection may be foreign to some readers as it was to me a while back.  Dependency Injection is when the system automatically "Injects" some dependent code you need.  For Example, your [UserController](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Controllers/Administrative/AccountController.cs) may need a helper that can get the [current IUserInfo](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Repositories/Interfaces/IUserRepository.cs), [register a user](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Services/Interfaces/IUserService.cs), or do other similar operations.  The [UserController](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Controllers/Administrative/AccountController.cs) requests these classes (in the form of an Interface), and the Dependency Injector finds the current class that implements the interface (like [this class](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Repositories/Implementations/KenticoUserRepository.cs) and [this one](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Services/Implementation/KenticoUserService.cs)) and injects it in.
 
 In our project, we use `AutoFac` for our Dependency Injection, and you can see it registering `IRepository, IService, IOutputCache, IDynamicRouteHelper, and cultureName / lastVersionEnabled` [in this file](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Infrastructure/Caching/Startup/DependencyResolverConfig.cs).
 
@@ -131,7 +131,7 @@ The next piece is a clone of the normal [\_layout.cshtml](https://github.com/HBS
 
 #### 3\. Special Views
 
-For each page type, we have a view to render it, and what is key is in the layout declaration, we are using the Html Helper `LayoutIfEditMode` method, which means that the content around it will only render if it's being edited by the CMS.  Otherwise, it will only render the view itself (which is just the PageBuilder content).  In this way, when we pull the content into the header/footer areas, it is just that area's HTML.  Here’s the [Header](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Header/Render.cshtml) and Here’s the [Footer](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Shared/PageTypes/Footer.cshtml).
+For each page type, we have a view to render it, and what is key is in the layout declaration, we are using the Html Helper `LayoutIfEditMode` method, which means that the content around it will only render if it's being edited by the CMS.  Otherwise, it will only render the view itself (which is just the PageBuilder content).  In this way, when we pull the content into the header/footer areas, it is just that area's HTML.  Here’s the [Header](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Shared/PageTypes/Header.cshtml) and Here’s the [Footer](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Shared/PageTypes/Footer.cshtml).
 
 #### 4\. Dynamic Route
 
@@ -142,7 +142,7 @@ Since the rendering of these sections are very simple, we are going to just add 
 
 #### 5\. Manual Output Cache
 
-Since the ParitalWidgetPage makes a web request to get its content, it is not aware of any Output Caching on the elements it is pulling in, meaning our Header and Footer content will not be automatically added to the output cache.  So, we have a special helper function to manually add the output cache for the header and footer.  This is not ideal of course; I am open to any ideas how to do this otherwise though.
+Since the PartialWidgetPage makes a web request to get its content, it is not aware of any Output Caching on the elements it is pulling in, meaning our Header and Footer content will not be automatically added to the output cache.  So, we have a special helper function to manually add the output cache for the header and footer.  This is not ideal of course; I am open to any ideas how to do this otherwise though.
 
     @{OutputCacheHelper.AddCacheDependency($"node|{OutputCacheHelper.CurrentSiteName()}|/Masterpage/Footer"); }
     @{OutputCacheHelper.AddCacheDependency($"nodes|{OutputCacheHelper.CurrentSiteName()}|Generic.Header|all"); }
@@ -195,7 +195,7 @@ Lastly since Navigation items may be generated dynamically, a page a navigation 
 
 ### MetaData and Title
 
-Using the `ViewBag` is fine for the page title, as it is pretty common practice, and it is what I do in my site.  But when it comes to passing a `MetaData` model (or models), while you can use the `ViewBag`, I would not recommend it.  Instead it is better to have a `MetaData` model, and pass that to a `ParitalView` to render it.  This way you have a strongly typed class, and you can possibly send different types of models to render different types of meta data (such as `JSON+ld` tags).
+Using the `ViewBag` is fine for the page title, as it is pretty common practice, and it is what I do in my site.  But when it comes to passing a `MetaData` model (or models), while you can use the `ViewBag`, I would not recommend it.  Instead it is better to have a `MetaData` model, and pass that to a `PartialView` to render it.  This way you have a strongly typed class, and you can possibly send different types of models to render different types of meta data (such as `JSON+ld` tags).
 
 The hard part about this is then you usually are stuck generating this model for each page type, which can be very tedious (even WITH an `AutoMapper`).  To remedy this, I use [Meeg's ContentComponent](https://github.com/CMeeg/kentico-contrib/tree/master/src/Meeg.Kentico.ContentComponents) system, which allows you to store a serialized model (Page type) in a field of your page.  I have a Page Type called `Page MetaData` which contains the items I need to create my Page Title, OG tags, etc.  I can retrieve this strongly typed model by calling `GetPageTypeComponent<T>("FieldName")` on any `TreeNode` object.  I have a naming convention that the Field must be the Component's ClassName (with period replaced with underscore) for all classes.  If the field does not exist, it returns null which my [partial view handles by itself by](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Shared/Components/PageMetaData.cshtml).  You can see this in action in my [GenericPage.cshtml](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Shared/PageTypes/GenericPage.cshtml) and my [Homepage.cshtml](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Views/Home/Index.cshtml).
 
