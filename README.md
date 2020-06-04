@@ -9,7 +9,7 @@ Install a normal Kentico MVC Site, and hotfix it up to the current Hotfix of thi
 On the Kentico Admin (WebApp/Mother) solution, install the following NuGet Packages
 1. [DynamicRouting.Kentico](https://www.nuget.org/packages/DynamicRouting.Kentico)
 2. [Meeg.Kentico.ContentComponents.Cms.Admin](https://www.nuget.org/packages/Meeg.Kentico.ContentComponents.Cms.Admin/)
-3. [RelationshiposExtended](https://www.nuget.org/packages/RelationshipsExtended/)
+3. [RelationshipsExtended](https://www.nuget.org/packages/RelationshipsExtended/)
 4. [PageBuilderContainers.Kentico](https://www.nuget.org/packages/PageBuilderContainers.Kentico/)
 
 Optionally install
