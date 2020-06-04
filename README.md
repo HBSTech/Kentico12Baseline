@@ -58,7 +58,7 @@ Baseline Items
 
 ***
 # Tool Explenations
-Below will not go through all the systems in the Baseline and explain how they operate.
+Below I will now go through all the systems in the Baseline and explain how they operate.
 
 ### [Global.asax.cs](https://github.com/HBSTech/Kentico12Baseline/blob/master/MVC/MVC/Global.asax.cs)
 
