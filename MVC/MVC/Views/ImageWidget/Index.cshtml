@@ -6,7 +6,10 @@
     Html.RenderPartial("InlineEditors/_ImageUploaderEditor", new ImageUploaderEditorViewModel
     {
         PropertyName = nameof(ImageWidgetProperties.ImageGuid),
-        HasImage = Model.ImageGuid != null,
+        HasImage = Model.ImageGuid != null && Model.ImageGuid != Guid.Empty,
+        ImageType = Model.ImageType
     });
 }
-<img src="@Url.Content(Model.ImageUrl)" alt="@Model.Alt" class="@Model.CssClass"/>
+@if (!string.IsNullOrWhiteSpace(Model.ImageUrl)) {
+    <img src="@Url.Content(Model.ImageUrl)" alt="@Model.Alt" class="@Model.CssClass" />
+}

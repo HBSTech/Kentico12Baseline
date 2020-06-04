@@ -1064,7 +1064,6 @@
     <Content Include="Views\Shared\Widgets\_RichTextEditor.cshtml" />
     <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Shared\Widgets\_ImageWidget.cshtml" />
     <Content Include="Views\Navigation\SecondaryNavigation.cshtml" />
     <Content Include="Views\Navigation\SecondaryNavigationDropdownItem.cshtml" />
     <Content Include="Views\Navigation\SecondaryNavigationItem.cshtml" />
@@ -1086,7 +1085,8 @@
     <Content Include="Views\Shared\FormComponents\_DoubleInputFormComponent.cshtml" />
     <Content Include="Views\Shared\FormComponents\_DecimalInputFormComponent.cshtml" />
     <Content Include="Views\Shared\FormComponents\_GuidInputFormComponent.cshtml" />
-	<Content Include="Views\Shared\PageTypes\Header.cshtml" />
+    <Content Include="Views\Shared\PageTypes\Header.cshtml" />
+    <Content Include="Views\ImageWidget\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -1116,7 +1116,7 @@
     <Compile Include="Infrastructure\Caching\Implementations\OutputCacheDependencies.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IContentItemMetadataProvider.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IOutputCacheDependencies.cs" />
-	<Compile Include="Library\Generic_LoaderModule.cs" />													 
+    <Compile Include="Library\Generic_LoaderModule.cs" />
     <Compile Include="Library\Helpers\ObjectQueryExtensions.cs" />
     <Compile Include="Library\ValidationAttributes\LocalizedCurrentUserPasswordValidAttribute.cs" />
     <Compile Include="Library\ValidationAttributes\LocalizedPasswordPolicyAttribute.cs" />

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Kentico.Components.Web.Mvc.FormComponents;
 using Kentico.Forms.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 
@@ -17,8 +19,10 @@ namespace Generic.Models
         [EditingComponent(CheckBoxComponent.IDENTIFIER, Label ="Use Attachment", Tooltip ="Uncheck if you wish to use the below media library path.", Order = 1)]
         public bool UseAttachment { get; set; } = true;
 
-        [EditingComponent(TextInputComponent.IDENTIFIER, Label ="Media relative link", Order = 2)]
-        public string ImageUrl { get; set; }
+        [EditingComponent(MediaFilesSelector.IDENTIFIER, Label = "Media relative link", Order = 2)]
+        [EditingComponentProperty(nameof(MediaFilesSelectorProperties.MaxFilesLimit), 1)]
+        [EditingComponentProperty(nameof(MediaFilesSelectorProperties.AllowedExtensions), ".gif;.png;.jpg;.jpeg")]
+        public IList<MediaFilesSelectorItem> ImageUrl { get; set; }
 
         [EditingComponent(TextInputComponent.IDENTIFIER, Label = "Image Alt", Order = 3)]
         public string Alt { get; set; }

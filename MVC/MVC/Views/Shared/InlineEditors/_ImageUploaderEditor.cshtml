@@ -28,20 +28,36 @@
         }
     }
 }
-@using (Html.Kentico().BeginInlineEditor("image-uploader-editor", Model.PropertyName,
-    new
+@if (Model.ImageType == ImageTypeEnum.Attachment)
+{
+    using (Html.Kentico().BeginInlineEditor("image-uploader-editor", Model.PropertyName,
+        new
+        {
+            @class = "image-uploader-editor",
+            data_url = Model.GetDataUrl(),
+            data_file_type = Model.ImageType == ImageTypeEnum.MediaFile ? "media" : "attachment"
+        }))
     {
-        @class = "image-uploader-editor",
-        data_url = Model.GetDataUrl(),
-        data_file_type = Model.ImageType == ImageTypeEnum.MediaFile ? "media" : "attachment"
-    }))
+        <div class="@GetContainerClass()">
+            <div class="uploader">
+                <div class="dz-message @GetMessagePositionClass()">
+                    <i class="icon-arrow-up-line"></i>
+                    <div>
+                        @Html.GetUIString("Generic.InlineEditors.ImageAttachmentUploader.DropText")
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
 {
     <div class="@GetContainerClass()">
         <div class="uploader">
             <div class="dz-message @GetMessagePositionClass()">
                 <i class="icon-arrow-up-line"></i>
                 <div>
-                    @Html.GetUIString(Model.ImageType == ImageTypeEnum.MediaFile ? "Generic.InlineEditors.ImageMediaUploader.DropText" : "Generic.InlineEditors.ImageAttachmentUploader.DropText")
+                    @Html.GetUIString("Generic.InlineEditors.ImageMediaUploader.DropText")
                 </div>
             </div>
         </div>

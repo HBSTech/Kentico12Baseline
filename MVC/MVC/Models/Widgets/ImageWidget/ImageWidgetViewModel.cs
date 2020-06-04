@@ -1,4 +1,5 @@
 ﻿using CMS.DocumentEngine;
+using Generic.Models.InlineEditors;
 using System;
 
 namespace Generic.ViewModels
@@ -17,6 +18,6 @@ namespace Generic.ViewModels
         public string Alt { get; set; }
 
         public string CssClass { get; set; }
-
+        public ImageTypeEnum ImageType { get; set; }
     }
 }

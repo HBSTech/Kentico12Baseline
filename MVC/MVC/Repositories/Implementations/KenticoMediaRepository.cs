@@ -1,7 +1,9 @@
 ﻿using CMS.DocumentEngine;
 using CMS.EventLog;
+using CMS.Helpers;
 using CMS.MediaLibrary;
 using Generic.Repositories.Interfaces;
+using Kentico.Content.Web.Mvc;
 using MVCCaching;
 using System;
 using System.Linq;
@@ -20,7 +22,8 @@ namespace Generic.Repositories.Implementations
         [CacheDependency("attachment|{0}")]
         public string GetAttachmentImage(TreeNode Page, Guid ImageGuid)
         {
-            return Page?.AllAttachments.FirstOrDefault(x => x.AttachmentGUID == ImageGuid).AttachmentUrl;
+            var Attachment = Page?.AllAttachments.Where(x => x.AttachmentGUID == ImageGuid).FirstOrDefault();
+            return (Attachment != null ? Attachment.GetPath() : "");
         }
 
         [CacheDependency("mediafile|{0}")]
