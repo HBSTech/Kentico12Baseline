@@ -110,6 +110,7 @@ namespace Generic.Repositories.Helpers.Implementations
         /// <param name="Options">The SiteMapoptions </param>
         /// <param name="ClassName">The Classname, if you are searching a specific one.</param>
         /// <returns>The Base Query</returns>
+        [DoNotCache]
         public DocumentQuery GetDocumentQuery(string Path, SiteMapOptions Options, string ClassName = null)
         {
             List<string> Columns = new List<string>(new string[] {

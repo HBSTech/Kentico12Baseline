@@ -1,4 +1,5 @@
-﻿using Generic.Models;
+﻿using CMS.DocumentEngine.Types.Generic;
+using Generic.Models;
 using Generic.Repositories.Interfaces;
 using SimpleMvcSitemap;
 using System.Collections.Generic;
@@ -24,16 +25,21 @@ namespace Generic.Controllers.Administrative
         {
             List<SitemapNode> Nodes = new List<SitemapNode>();
             // This site uses a custom navigation type, so we will base the Sitemap off of that.
-            Nodes.AddRange(mSiteMapRepo.GetSiteMapUrlSet(new SiteMapOptions()
-            {
-                Path = "/Site-Objects/Header-Footer/Navigation",
-                ClassNames = new string[] { "Generic.Navigation" },
-                UrlColumnName = "NavigationLinkUrl",
-                CacheItemName = "SiteMap"
-            })
+                Nodes.AddRange(mSiteMapRepo.GetSiteMapUrlSet(new SiteMapOptions()
+                {
+                    Path = "/MasterPage/Navigation",
+                    ClassNames = new string[] { Navigation.CLASS_NAME },
+                    UrlColumnName = "NavigationLinkUrl",
+                    CacheItemName = "SiteMap"
+                })
             );
             // Add custom SitemapNodes here if you wish
-
+            Nodes.AddRange(mSiteMapRepo.GetSiteMapUrlSet(new SiteMapOptions()
+            {
+                Path = "/%",
+                ClassNames = new string[] { GenericPage.CLASS_NAME },
+                CacheItemName = "SiteMapPages"
+            }));
             // Now render manually, sadly the SimpleMVCSitemap disables output cache somehow
             return Content(GetSitemapXml(Nodes), "text/xml", Encoding.UTF8);
         }
