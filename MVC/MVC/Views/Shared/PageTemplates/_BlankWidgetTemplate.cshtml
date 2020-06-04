@@ -5,7 +5,8 @@
     PageMetaData MetaData = Model.Page.GetPageTypeComponent<PageMetaData>(PageMetaData.CLASS_NAME.Replace(".", "_"));
 }
 @section head {
-    @{Html.RenderPartial("Components/PageMetaData", MetaData);}
+    @* passing a new ViewDataDictionary() as if you don't, it assumes the "type" passed is th same as your view's model type, causing 500 error *@
+    @{Html.RenderPartial("Components/PageMetaData", MetaData, new ViewDataDictionary());}
 }
 
 @Html.Kentico().EditableArea("main", allowedWidgets: UserWidgetProvider.GetUserAllowedWidgets(AddZoneWidgets: true))
