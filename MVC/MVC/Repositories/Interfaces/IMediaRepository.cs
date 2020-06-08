@@ -7,12 +7,19 @@ namespace Generic.Repositories.Interfaces
     public interface IMediaRepository : IRepository
     {
         /// <summary>
-        /// Gets the Attachment Url
+        /// Gets the Attachment Url, if using this method the page must include the DocumentID column if using Kentico
         /// </summary>
         /// <param name="Page">The Page</param>
         /// <param name="ImageGuid">The Attachment Guid</param>
         /// <returns></returns>
         string GetAttachmentImage(TreeNode Page, Guid ImageGuid);
+
+        /// <summary>
+        /// Gets the Attachment Url
+        /// </summary>
+        /// <param name="ImageGuid">The Attachment Guid</param>
+        /// <returns></returns>
+        string GetAttachmentImage(Guid ImageGuid);
 
         /// <summary>
         /// Gets the Media File Url

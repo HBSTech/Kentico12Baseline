@@ -19,11 +19,18 @@ namespace Generic.Repositories.Implementations
             _SiteRepo = SiteRepo;
         }
 
-        [CacheDependency("attachment|{0}")]
+        [CacheDependency("attachment|{1}")]
         public string GetAttachmentImage(TreeNode Page, Guid ImageGuid)
         {
             var Attachment = Page?.AllAttachments.Where(x => x.AttachmentGUID == ImageGuid).FirstOrDefault();
             return (Attachment != null ? Attachment.GetPath() : "");
+        }
+
+        [CacheDependency("attachment|{0}")]
+        public string GetAttachmentImage(Guid ImageGuid)
+        {
+            var Attachment = AttachmentInfoProvider.GetAttachmentInfoWithoutBinary(ImageGuid, _SiteRepo.CurrentSiteName());
+            return (Attachment != null ? new DocumentAttachment(Attachment).GetPath() : "");
         }
 
         [CacheDependency("mediafile|{0}")]
