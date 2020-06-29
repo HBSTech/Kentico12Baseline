@@ -34,6 +34,24 @@ Kentico uses Webfarm to sync media file changes, event triggers, and more import
 
 ***
 
+### Note on 403.14 Forbidden for Paths matching Folders
+Although not an issue specifically with Baseline, if you encounter a 403.14 error on pages whose URL matches a folder on the MVC structure (ex `/services` or `/library`), IIS will try to display the folder content vs. route the page.  You will need to add this to the Route.cs, and include any content folders you wish to server state files from, usually the `Content`, `Kentico`, and 'Scripts' folder, and any Site folders.
+
+``` csharp
+
+    public static void RegisterRoutes(RouteCollection routes)
+    {
+        routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+        // Exclude static content mapping except for these, so urls matching folders are routed via MVC instead of directory listing/file listing
+        routes.RouteExistingFiles = true;
+        routes.IgnoreRoute("Content/{*pathInfo}");
+        routes.IgnoreRoute("Kentico/{*pathInfo}");
+        routes.IgnoreRoute("Scripts/{*pathInfo}");
+        routes.IgnoreRoute("baseline/{*pathInfo}");
+
+```
+
 
 Baseline Items
 ======================================================================
