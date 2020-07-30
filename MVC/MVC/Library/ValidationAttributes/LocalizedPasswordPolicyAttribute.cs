@@ -16,7 +16,7 @@ namespace Generic.Attributes
 
         public override bool IsValid(object value)
         {
-            if(value is string)
+            if (value is string)
             {
                 string Password = value.ToString();
                 ISiteRepository _SiteRepo = DependencyResolver.Current.GetService<ISiteRepository>();
@@ -45,9 +45,25 @@ namespace Generic.Attributes
             if (!string.IsNullOrWhiteSpace(PasswordSettings.Regex))
             {
                 rules.Add(new ModelClientValidationRegexRule(ErrorMessage, PasswordSettings.Regex));
-            } else if (PasswordSettings.NumNonAlphanumericChars > 0)
+            }
+            else if (PasswordSettings.NumNonAlphanumericChars > 0)
             {
-                rules.Add(new ModelClientValidationRegexRule(ErrorMessage, @"\W{" + PasswordSettings.NumNonAlphanumericChars + ",999}"));
+                string Rule = "(?=.*";
+                // Add a \W_ (at least 1) + Anything else rule for each non alphanumeric
+                for (int nc = 0; nc < PasswordSettings.NumNonAlphanumericChars; nc++)
+                {
+                    Rule += "[\\W_]+.*";
+                }
+                Rule += ").";
+                if (PasswordSettings.MinLength > 0)
+                {
+                    Rule += "{" + PasswordSettings.MinLength + ",}";
+                }
+                else
+                {
+                    Rule += "*";
+                }
+                rules.Add(new ModelClientValidationRegexRule(ErrorMessage, Rule));
             }
             return rules;
         }
