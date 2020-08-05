@@ -10,9 +10,8 @@ using System.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.Web;
-using DynamicRouting.Interfaces;
-using DynamicRouting;
 using DynamicRouting.Implementations;
+using DynamicRouting.Interfaces;
 
 namespace MVCCaching.Kentico
 {
@@ -40,6 +39,9 @@ namespace MVCCaching.Kentico
             // Register controllers
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
+            // Register services that use IDynamicRouteHelper
+            builder.RegisterType(typeof(BaseDynamicRouteHelper)).As(typeof(IDynamicRouteHelper));
+
             // Register repositories that use IRepository, passing culture and LatestVersionEnabled
             builder.RegisterAssemblyTypes(typeof(MvcApplication).Assembly)
                    .Where(x => x.IsClass && !x.IsAbstract && typeof(IRepository).IsAssignableFrom(x))
@@ -61,9 +63,6 @@ namespace MVCCaching.Kentico
                 .Where(x => x.IsClass && !x.IsAbstract && typeof(IOutputCacheDependencies).IsAssignableFrom(x))
                 .AsImplementedInterfaces()
                 .InstancePerRequest();
-
-            // Register services that use IDynamicRouteHelper
-            builder.RegisterType(typeof(BaseDynamicRouteHelper)).As(typeof(IDynamicRouteHelper));
 
             // Register providers of additional information about content items
             builder.RegisterType<ContentItemMetadataProvider>()

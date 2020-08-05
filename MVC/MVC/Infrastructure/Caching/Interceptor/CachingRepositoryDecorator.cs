@@ -57,31 +57,38 @@ namespace MVCCaching.Kentico
 
             var cacheDependencyAttributes = invocation.MethodInvocationTarget.GetCustomAttributes<CacheDependencyAttribute>().ToList();
             var doNotCacheAttributes = invocation.MethodInvocationTarget.GetCustomAttributes<DoNotCacheAttribute>().ToList();
+            var CacheDurationAttributes = invocation.MethodInvocationTarget.GetCustomAttributes<CacheDurationAttribute>().ToList();
+            int MinutesOverride = (CacheDurationAttributes.Count > 0 ? CacheDurationAttributes[0].DurationMinutes : -1);
 
             // Either Cache or Retrieve, can modify and include custom logic for DependencyCacheKey generation
-            if (doNotCacheAttributes.Count > 0)
+            // Do not cache if there is the "DoNotCache" attribute, or the cache duration is found and is 0
+            if (doNotCacheAttributes.Count > 0 || MinutesOverride == 0)
             {
                 invocation.Proceed();
             }
             else if (cacheDependencyAttributes.Count > 0)
             {
-                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyFromAttributes(cacheDependencyAttributes, invocation.Arguments));
+                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyFromAttributes(cacheDependencyAttributes, invocation.Arguments), MinutesOverride);
             }
             else if (typeof(TreeNode).IsAssignableFrom(returnType))
             {
-                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForPage(returnType));
+                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForPage(returnType), MinutesOverride);
             }
             else if (typeof(IEnumerable<TreeNode>).IsAssignableFrom(returnType))
             {
-                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForPage(returnType.GenericTypeArguments[0]));
+                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForPage(returnType.GenericTypeArguments[0]), MinutesOverride);
             }
             else if (typeof(BaseInfo).IsAssignableFrom(returnType))
             {
-                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForObject(returnType));
+                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForObject(returnType), MinutesOverride);
             }
             else if (typeof(IEnumerable<BaseInfo>).IsAssignableFrom(returnType))
             {
-                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForObject(returnType.GenericTypeArguments[0]));
+                invocation.ReturnValue = GetCachedResult(invocation, GetDependencyCacheKeyForObject(returnType.GenericTypeArguments[0]), MinutesOverride);
+            } else if(MinutesOverride > 0)
+            {
+                // If they only have a CacheDuration and no cache dependency, cache with a random key
+                invocation.ReturnValue = GetCachedResult(invocation, Guid.NewGuid().ToString(), MinutesOverride);
             }
             else
             {
@@ -95,10 +102,14 @@ namespace MVCCaching.Kentico
         /// <param name="invocation"></param>
         /// <param name="dependencyCacheKey"></param>
         /// <returns></returns>
-        private object GetCachedResult(IInvocation invocation, string dependencyCacheKey)
+        private object GetCachedResult(IInvocation invocation, string dependencyCacheKey, int MinutesOverride = -1)
         {
             var cacheKey = GetCacheItemKey(invocation);
             var cacheSettings = CreateCacheSettings(cacheKey, dependencyCacheKey);
+            if(MinutesOverride > 0)
+            {
+                cacheSettings.CacheMinutes = MinutesOverride;
+            }
 
             // Add dependencies to output caching
             mOutputCacheDependencies.AddCacheItemDependencies(dependencyCacheKey.Split(TextHelper.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
@@ -189,7 +200,7 @@ namespace MVCCaching.Kentico
             {
                 return ((ICacheKey)argument).GetCacheKey();
             }
-            if(argument is IEnumerable<object>)
+            if (argument is IEnumerable<object>)
             {
                 return string.Join("-", ((IEnumerable<object>)argument).Select(x => {
                     return (x is ICacheKey ? ((ICacheKey)x).GetCacheKey() : x.ToString());

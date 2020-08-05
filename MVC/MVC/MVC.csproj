@@ -53,8 +53,8 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Authorization.Kentico.MVC.DynamicRouting, Version=12.29.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Authorization.Kentico.MVC.DynamicRouting.12.29.1\lib\net461\Authorization.Kentico.MVC.DynamicRouting.dll</HintPath>
+    <Reference Include="Authorization.Kentico.MVC.DynamicRouting, Version=12.29.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Authorization.Kentico.MVC.DynamicRouting.12.29.2\lib\net461\Authorization.Kentico.MVC.DynamicRouting.dll</HintPath>
     </Reference>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
@@ -87,211 +87,211 @@
       <HintPath>..\packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Activities, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Activities.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Activities.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Activities.Loggers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Activities.Loggers.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Activities.Loggers.dll</HintPath>
     </Reference>
     <Reference Include="CMS.AmazonStorage, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.AmazonStorage.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.AmazonStorage.dll</HintPath>
     </Reference>
     <Reference Include="CMS.AspNet.Platform, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.AspNet.Platform.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.AspNet.Platform.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Automation, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Automation.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Automation.dll</HintPath>
     </Reference>
     <Reference Include="CMS.AzureStorage, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.AzureStorage.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.AzureStorage.dll</HintPath>
     </Reference>
     <Reference Include="CMS.BannerManagement, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.BannerManagement.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.BannerManagement.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Base, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Base.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Base.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Blogs, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Blogs.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Blogs.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Chat, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Chat.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Chat.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Community, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Community.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Community.dll</HintPath>
     </Reference>
     <Reference Include="CMS.ContactManagement, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.ContactManagement.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.ContactManagement.dll</HintPath>
     </Reference>
     <Reference Include="CMS.ContinuousIntegration, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.ContinuousIntegration.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.ContinuousIntegration.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Core, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Core.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Core.dll</HintPath>
     </Reference>
     <Reference Include="CMS.CustomTables, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.CustomTables.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.CustomTables.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DataEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.DataEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.DataEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DataProtection, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.DataProtection.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.DataProtection.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DeviceProfiles, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.DeviceProfiles.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.DeviceProfiles.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DocumentEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.DocumentEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.DocumentEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Ecommerce, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Ecommerce.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Ecommerce.dll</HintPath>
     </Reference>
     <Reference Include="CMS.EmailEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.EmailEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.EmailEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.EventLog, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.EventLog.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="CMS.EventManager, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.EventManager.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.EventManager.dll</HintPath>
     </Reference>
     <Reference Include="CMS.FormEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.FormEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.FormEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Forums, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Forums.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Forums.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Globalization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Globalization.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="CMS.HealthMonitoring, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.HealthMonitoring.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.HealthMonitoring.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Helpers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Helpers.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="CMS.ImportExport, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.ImportExport.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.ImportExport.dll</HintPath>
     </Reference>
     <Reference Include="CMS.IO, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.IO.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.IO.dll</HintPath>
     </Reference>
     <Reference Include="CMS.LicenseProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.LicenseProvider.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.LicenseProvider.dll</HintPath>
     </Reference>
     <Reference Include="CMS.LicenseProvider.XmlSerializers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.LicenseProvider.XmlSerializers.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.LicenseProvider.XmlSerializers.dll</HintPath>
     </Reference>
     <Reference Include="CMS.MacroEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.MacroEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.MacroEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.MediaLibrary, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.MediaLibrary.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.MediaLibrary.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Membership, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Membership.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Membership.dll</HintPath>
     </Reference>
     <Reference Include="CMS.MembershipProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.MembershipProvider.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.MembershipProvider.dll</HintPath>
     </Reference>
     <Reference Include="CMS.MessageBoards, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.MessageBoards.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.MessageBoards.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Modules, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Modules.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Modules.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Newsletters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Newsletters.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Newsletters.dll</HintPath>
     </Reference>
     <Reference Include="CMS.OnlineForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.OnlineForms.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.OnlineForms.dll</HintPath>
     </Reference>
     <Reference Include="CMS.OnlineMarketing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.OnlineMarketing.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.OnlineMarketing.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Personas, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Personas.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Personas.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Polls, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Polls.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Polls.dll</HintPath>
     </Reference>
     <Reference Include="CMS.PortalEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.PortalEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.PortalEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Protection, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Protection.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Protection.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Relationships, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Relationships.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Relationships.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Reporting, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Reporting.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="CMS.ResponsiveImages, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.ResponsiveImages.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.ResponsiveImages.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Routing.Web, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Routing.Web.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Routing.Web.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SalesForce, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.SalesForce.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.SalesForce.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Scheduler, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Scheduler.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Scheduler.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Search.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Search.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Search.Azure, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Search.Azure.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Search.Azure.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Search.Lucene3, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Search.Lucene3.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Search.Lucene3.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Search.TextExtractors, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Search.TextExtractors.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Search.TextExtractors.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.SharePoint.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.SharePoint.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SiteProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.SiteProvider.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.SiteProvider.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SocialMarketing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.SocialMarketing.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.SocialMarketing.dll</HintPath>
     </Reference>
     <Reference Include="CMS.StrandsRecommender, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.StrandsRecommender.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.StrandsRecommender.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Synchronization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Synchronization.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Synchronization.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SynchronizationEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.SynchronizationEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.SynchronizationEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Taxonomy, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.Taxonomy.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.Taxonomy.dll</HintPath>
     </Reference>
     <Reference Include="CMS.TranslationServices, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.TranslationServices.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.TranslationServices.dll</HintPath>
     </Reference>
     <Reference Include="CMS.WebAnalytics, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.WebAnalytics.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.WebAnalytics.dll</HintPath>
     </Reference>
     <Reference Include="CMS.WebFarmSync, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.WebFarmSync.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.WebFarmSync.dll</HintPath>
     </Reference>
     <Reference Include="CMS.WorkflowEngine, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\CMS.WorkflowEngine.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\CMS.WorkflowEngine.dll</HintPath>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
-    <Reference Include="DynamicRouting.Kentico.Base, Version=12.29.11.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DynamicRouting.Kentico.MVC.12.29.14\lib\net461\DynamicRouting.Kentico.Base.dll</HintPath>
+    <Reference Include="DynamicRouting.Kentico.Base, Version=12.29.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicRouting.Kentico.MVC.12.29.17\lib\net461\DynamicRouting.Kentico.Base.dll</HintPath>
     </Reference>
-    <Reference Include="DynamicRouting.Kentico.MVC, Version=12.29.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DynamicRouting.Kentico.MVC.12.29.14\lib\net461\DynamicRouting.Kentico.MVC.dll</HintPath>
+    <Reference Include="DynamicRouting.Kentico.MVC, Version=12.29.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicRouting.Kentico.MVC.12.29.17\lib\net461\DynamicRouting.Kentico.MVC.dll</HintPath>
     </Reference>
     <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <HintPath>..\packages\Facebook.6.4.2\lib\net45\Facebook.dll</HintPath>
@@ -311,44 +311,38 @@
     <Reference Include="HBS.StaticTextContainerizedWidget.Kentico.MVC.Views, Version=12.29.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HBS.StaticTextContainerizedWidget.Kentico.MVC.12.29.3\lib\net461\HBS.StaticTextContainerizedWidget.Kentico.MVC.Views.dll</HintPath>
     </Reference>
-    <Reference Include="HBS.TinyMCE_Wysiwyg.Kentico.MVC, Version=12.29.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HBS.TinyMCE_Wysiwyg.Kentico.MVC.12.29.0\lib\net461\HBS.TinyMCE_Wysiwyg.Kentico.MVC.dll</HintPath>
-    </Reference>
-    <Reference Include="HBS.TinyMCE_Wysiwyg.Kentico.MVC.Views, Version=12.29.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HBS.TinyMCE_Wysiwyg.Kentico.MVC.12.29.0\lib\net461\HBS.TinyMCE_Wysiwyg.Kentico.MVC.Views.dll</HintPath>
-    </Reference>
     <Reference Include="Kentico.Content.Web.Mvc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.71\lib\net461\Kentico.Content.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.79\lib\net461\Kentico.Content.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Kentico.Content.Web.Mvc.Views, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.AspNet.Mvc.12.0.71\lib\net461\Kentico.Content.Web.Mvc.Views.dll</HintPath>
+      <HintPath>..\packages\Kentico.AspNet.Mvc.12.0.79\lib\net461\Kentico.Content.Web.Mvc.Views.dll</HintPath>
     </Reference>
-    <Reference Include="Kentico.InlineEditor.RichText, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\lib\net461\Kentico.InlineEditor.RichText.dll</HintPath>
+    <Reference Include="Kentico.InlineEditor.RichText, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\lib\net461\Kentico.InlineEditor.RichText.dll</HintPath>
     </Reference>
     <Reference Include="Kentico.Membership, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.71\lib\net461\Kentico.Membership.dll</HintPath>
+      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.79\lib\net461\Kentico.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Kentico.OnlineMarketing.Web.Mvc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.71\lib\net461\Kentico.OnlineMarketing.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.79\lib\net461\Kentico.OnlineMarketing.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Kentico.Web.Mvc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.71\lib\net461\Kentico.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Kentico.AspNet.Mvc.Libraries.12.0.79\lib\net461\Kentico.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Kentico.Widget.RichText, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\lib\net461\Kentico.Widget.RichText.dll</HintPath>
+    <Reference Include="Kentico.Widget.RichText, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\lib\net461\Kentico.Widget.RichText.dll</HintPath>
     </Reference>
-    <Reference Include="Kentico.Widget.RichText.Views, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\lib\net461\Kentico.Widget.RichText.Views.dll</HintPath>
+    <Reference Include="Kentico.Widget.RichText.Views, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\lib\net461\Kentico.Widget.RichText.Views.dll</HintPath>
     </Reference>
     <Reference Include="LinqToTwitter.net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=957107be965c25d9, processorArchitecture=MSIL">
       <HintPath>..\packages\linqtotwitter.4.0.0\lib\net45\LinqToTwitter.net.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net.v3, Version=3.0.3.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\Lucene.Net.v3.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\Lucene.Net.v3.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net.WordNet.SynExpand, Version=2.0.0.1, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\Lucene.Net.WordNet.SynExpand.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\Lucene.Net.WordNet.SynExpand.dll</HintPath>
     </Reference>
     <Reference Include="MaxMind.Db, Version=2.0.0.0, Culture=neutral, PublicKeyToken=66afa4cc5ae853ac, processorArchitecture=MSIL">
       <HintPath>..\packages\MaxMind.Db.2.4.0\lib\net45\MaxMind.Db.dll</HintPath>
@@ -463,7 +457,7 @@
       <HintPath>..\packages\Microsoft.Spatial.7.2.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.TransactSql.ScriptDom, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -486,8 +480,8 @@
     <Reference Include="Mono.Cecil.Rocks, Version=0.10.0.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Cecil.0.10.0\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="MVCCaching.Base, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVCCaching.Base.1.0.3\lib\net461\MVCCaching.Base.dll</HintPath>
+    <Reference Include="MVCCaching.Base, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MVCCaching.Base.1.0.5\lib\net461\MVCCaching.Base.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -507,17 +501,17 @@
     <Reference Include="PageBuilderContainers.Kentico.MVC.Views, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PageBuilderContainers.Kentico.MVC.12.29.2\lib\net461\PageBuilderContainers.Kentico.MVC.Views.dll</HintPath>
     </Reference>
-    <Reference Include="PartialWidgetPage.Kentico.MVC, Version=12.29.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PartialWidgetPage.Kentico.MVC.12.29.4\lib\net461\PartialWidgetPage.Kentico.MVC.dll</HintPath>
+    <Reference Include="PartialWidgetPage.Kentico.MVC, Version=12.29.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PartialWidgetPage.Kentico.MVC.12.29.7\lib\net461\PartialWidgetPage.Kentico.MVC.dll</HintPath>
     </Reference>
     <Reference Include="PayPal, Version=1.8.0.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
       <HintPath>..\packages\PayPal.1.8.0\lib\net451\PayPal.dll</HintPath>
     </Reference>
     <Reference Include="PDFClown, Version=0.1.2.1, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\PDFClown.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\PDFClown.dll</HintPath>
     </Reference>
     <Reference Include="PreMailer.Net, Version=1.5.5.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\PreMailer.Net.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\PreMailer.Net.dll</HintPath>
     </Reference>
     <Reference Include="RelationshipsExtendedMVCHelper, Version=12.29.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RelationshipsExtendedMVCHelper.12.29.3\lib\net461\RelationshipsExtendedMVCHelper.dll</HintPath>
@@ -618,7 +612,7 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Ude, Version=0.1.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kentico.Libraries.12.0.71\lib\net461\Ude.dll</HintPath>
+      <HintPath>..\packages\Kentico.Libraries.12.0.79\lib\net461\Ude.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -654,111 +648,9 @@
     <Content Include="Content\css\skins\ui\oxide\content.mobile.min.css" />
     <Content Include="Content\css\skins\ui\oxide\skin.min.css" />
     <Content Include="Content\css\skins\ui\oxide\skin.mobile.min.css" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\medium-editor\css\medium-editor.css" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\medium-editor\css\themes\default.css" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\medium-editor\js\medium-editor.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\TextEditor.css" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\TinyMCEInputComponent.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\jquery.tinymce.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Content\FormComponents\Kentico.RichText\main.css" />
+    <Content Include="Content\FormComponents\Kentico.RichText\main.min.css" />
     <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\langs\readme.md" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\license.txt" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\advlist\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\advlist\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\anchor\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\anchor\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autolink\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autolink\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autoresize\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autoresize\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autosave\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\autosave\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\bbcode\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\bbcode\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\charmap\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\charmap\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\codesample\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\codesample\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\code\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\code\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\colorpicker\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\colorpicker\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\contextmenu\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\contextmenu\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\directionality\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\directionality\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\emoticons\js\emojis.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\emoticons\js\emojis.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\emoticons\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\emoticons\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\fullpage\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\fullpage\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\fullscreen\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\fullscreen\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\help\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\help\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\hr\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\hr\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\imagetools\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\imagetools\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\image\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\image\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\importcss\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\importcss\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\insertdatetime\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\insertdatetime\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\legacyoutput\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\legacyoutput\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\link\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\link\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\lists\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\lists\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\media\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\media\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\nonbreaking\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\nonbreaking\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\noneditable\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\noneditable\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\pagebreak\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\pagebreak\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\paste\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\paste\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\preview\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\preview\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\print\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\print\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\quickbars\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\quickbars\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\save\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\save\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\searchreplace\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\searchreplace\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\spellchecker\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\spellchecker\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\tabfocus\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\tabfocus\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\table\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\table\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\template\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\template\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\textcolor\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\textcolor\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\textpattern\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\textpattern\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\toc\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\toc\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\visualblocks\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\visualblocks\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\visualchars\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\visualchars\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\wordcount\plugin.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\plugins\wordcount\plugin.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\themes\mobile\theme.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\themes\mobile\theme.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\themes\silver\theme.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\themes\silver\theme.min.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\tinymce.js" />
-    <Content Include="Content\FormComponents\TinyMCEInputComponent\tinymce\tinymce.min.js" />
     <Content Include="Content\InlineEditors\ColorPickerEditor\color-picker-editor.js" />
     <Content Include="Content\InlineEditors\ColorPickerEditor\ColorPickerEditor.css" />
     <Content Include="Content\InlineEditors\DropdownEditor\DropdownEditor.css" />
@@ -771,146 +663,12 @@
     <Content Include="Content\InlineEditors\Kentico.RichText\main.min.js" />
     <Content Include="Content\InlineEditors\SpinnerEditor\spinner-editor.js" />
     <Content Include="Content\InlineEditors\SpinnerEditor\SpinnerEditor.css" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\medium-editor\css\medium-editor.css" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\medium-editor\css\themes\default.css" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\medium-editor\js\medium-editor.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\TextEditor.css" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\TinyMCEEDitor.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\jquery.tinymce.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\jquery.tinymce.min.js" />
     <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\langs\readme.md" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\license.txt" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\advlist\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\advlist\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\anchor\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\anchor\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autolink\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autolink\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autoresize\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autoresize\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autosave\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\autosave\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\bbcode\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\bbcode\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\charmap\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\charmap\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\codesample\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\codesample\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\code\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\code\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\colorpicker\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\colorpicker\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\contextmenu\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\contextmenu\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\directionality\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\directionality\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\emoticons\js\emojis.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\emoticons\js\emojis.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\emoticons\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\emoticons\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\fullpage\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\fullpage\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\fullscreen\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\fullscreen\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\help\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\help\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\hr\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\hr\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\imagetools\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\imagetools\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\image\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\image\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\importcss\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\importcss\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\insertdatetime\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\insertdatetime\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\legacyoutput\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\legacyoutput\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\link\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\link\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\lists\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\lists\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\media\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\media\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\nonbreaking\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\nonbreaking\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\noneditable\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\noneditable\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\pagebreak\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\pagebreak\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\paste\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\paste\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\preview\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\preview\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\print\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\print\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\quickbars\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\quickbars\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\save\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\save\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\searchreplace\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\searchreplace\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\spellchecker\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\spellchecker\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\tabfocus\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\tabfocus\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\table\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\table\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\template\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\template\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\textcolor\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\textcolor\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\textpattern\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\textpattern\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\toc\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\toc\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\visualblocks\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\visualblocks\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\visualchars\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\visualchars\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\wordcount\plugin.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\plugins\wordcount\plugin.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\themes\mobile\theme.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\themes\mobile\theme.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\themes\silver\theme.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\themes\silver\theme.min.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\tinymce.js" />
-    <Content Include="Content\InlineEditors\TinyMCEEditor\tinymce\tinymce.min.js" />
     <Content Include="Content\js\bootstrap\bootstrap.min.js" />
     <Content Include="Content\css\skins\ui\oxide\fonts\tinymce-mobile.woff" />
     <Content Include="AppSettings.config" />
-    <Content Include="robots.txt" />
-    <Content Include="Widgets\StaticTextContainerizedWidget\icon.png" />
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
-    <Content Include="ConnectionStrings.config" />
-    <Content Include="Content\InlineEditors\Kentico.RichText\main.min.js.LICENSE" />
-    <None Include="Content\js\jquery.validate\jquery.validate-vsdoc.js" />
-    <Content Include="Content\js\Custom.es5.js">
-      <DependentUpon>Custom.js</DependentUpon>
-    </Content>
-    <Content Include="Content\js\Custom.es5.min.js">
-      <DependentUpon>Custom.es5.js</DependentUpon>
-    </Content>
-    <Content Include="Content\js\Custom.js" />
-    <Content Include="Content\js\jquery.validate\jquery.validate.js" />
-    <Content Include="Content\js\jquery.validate\jquery.validate.min.js" />
-    <Content Include="Content\js\jquery.validate\jquery.validate.unobtrusive.js" />
-    <Content Include="Content\js\jquery.validate\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Content\scss\Custom.css">
-      <DependentUpon>Custom.scss</DependentUpon>
-    </Content>
-    <Content Include="Content\scss\Custom.min.css">
-      <DependentUpon>Custom.css</DependentUpon>
-    </Content>
-    <Content Include="Content\scss\EditMode.css" />
-    <Content Include="Content\scss\EditMode.min.css" />
     <Content Include="Content\Widgets\Kentico.RichText\main.css" />
     <Content Include="Content\Widgets\Kentico.RichText\main.min.css" />
-    <Content Include="Content\Widgets\StaticTextContainerizedWidget\icon.png" />
-    <Content Include="Global.asax" />
     <Content Include="Kentico\Content\FormComponents\FileUploader\file-uploader.js" />
     <Content Include="Kentico\Content\FormComponents\USPhone\inputmask.js" />
     <Content Include="Kentico\Content\InlineEditors\DropdownEditor\dropdown-editor.js" />
@@ -1003,10 +761,6 @@
     <Content Include="Kentico\Scripts\builders\components\kentico-widget-header.es5.js" />
     <Content Include="Kentico\Scripts\builders\components\kentico-widget-header.js" />
     <Content Include="Kentico\Scripts\builders\Core-icons.svg" />
-    <Content Include="Kentico\Scripts\builders\Core-icons.woff" />
-    <Content Include="Kentico\Scripts\builders\Core-icons.ttf" />
-    <Content Include="Kentico\Scripts\builders\Core-icons.eot" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Kentico\Scripts\builders\form-builder.css" />
     <Content Include="Kentico\Scripts\builders\form-builder.js" />
     <Content Include="Kentico\Scripts\builders\page-builder.css" />
@@ -1019,6 +773,40 @@
     <Content Include="Kentico\Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Kentico\Scripts\modal-dialog.js" />
     <Content Include="Kentico\Scripts\shim.min.js" />
+    <Content Include="robots.txt" />
+    <Content Include="Widgets\StaticTextContainerizedWidget\icon.png" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="ConnectionStrings.config" />
+    <Content Include="Content\InlineEditors\Kentico.RichText\main.min.js.LICENSE" />
+    <None Include="Content\js\jquery.validate\jquery.validate-vsdoc.js" />
+    <Content Include="Content\js\Custom.es5.js">
+      <DependentUpon>Custom.js</DependentUpon>
+    </Content>
+    <Content Include="Content\js\Custom.es5.min.js">
+      <DependentUpon>Custom.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Content\js\Custom.js" />
+    <Content Include="Content\js\jquery.validate\jquery.validate.js" />
+    <Content Include="Content\js\jquery.validate\jquery.validate.min.js" />
+    <Content Include="Content\js\jquery.validate\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\js\jquery.validate\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\scss\Custom.css">
+      <DependentUpon>Custom.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\scss\Custom.min.css">
+      <DependentUpon>Custom.css</DependentUpon>
+    </Content>
+    <Content Include="Content\scss\EditMode.css" />
+    <Content Include="Content\scss\EditMode.min.css" />
+    <Content Include="Content\Widgets\StaticTextContainerizedWidget\icon.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Kentico\Scripts\builders\Core-icons.woff" />
+    <Content Include="Kentico\Scripts\builders\Core-icons.ttf" />
+    <Content Include="Kentico\Scripts\builders\Core-icons.eot" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -1060,7 +848,6 @@
     <Content Include="Views\Shared\FormSections\_BootstrapTwoColumnFormSection.cshtml" />
     <Content Include="Views\Shared\PageTemplates\_BlankWidgetTemplate.cshtml" />
     <None Include="packages.config" />
-    <Content Include="Views\Shared\Widgets\PartialWidgetPage\_PartialWidgetPage.cshtml" />
     <Content Include="Views\Shared\Widgets\_RichTextEditor.cshtml" />
     <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -1087,6 +874,7 @@
     <Content Include="Views\Shared\FormComponents\_GuidInputFormComponent.cshtml" />
     <Content Include="Views\Shared\PageTypes\Header.cshtml" />
     <Content Include="Views\ImageWidget\Index.cshtml" />
+    <Content Include="Views\Shared\Widgets\PartialWidgetPage\_PartialWidgetPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -1114,6 +902,7 @@
     <Compile Include="Infrastructure\Caching\Implementations\ContentItemMetadataProvider.cs" />
     <Compile Include="Infrastructure\Caching\Implementations\KenticoCacheHelper.cs" />
     <Compile Include="Infrastructure\Caching\Implementations\OutputCacheDependencies.cs" />
+    <Compile Include="Infrastructure\Caching\Interceptor\CachingRepositoryDecorator.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IContentItemMetadataProvider.cs" />
     <Compile Include="Infrastructure\Caching\Interfaces\IOutputCacheDependencies.cs" />
     <Compile Include="Library\Generic_LoaderModule.cs" />
@@ -1146,7 +935,6 @@
     <Compile Include="Models\Widgets\ImageWidget\ImageWidgetProperties.cs" />
     <Compile Include="Models\Widgets\ImageWidget\ImageWidgetViewModel.cs" />
     <Compile Include="Models\Widgets\RichTextWidgetProperties.cs" />
-    <Compile Include="Infrastructure\Caching\Interceptor\CachingRepositoryDecorator.cs" />
     <Compile Include="Infrastructure\Caching\Startup\DependencyResolverConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1269,13 +1057,13 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\BuildWebCompiler.1.12.405\build\BuildWebCompiler.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildWebCompiler.1.12.405\build\BuildWebCompiler.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Kentico.LanguagePack.English.12.0.71\build\Kentico.LanguagePack.English.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.LanguagePack.English.12.0.71\build\Kentico.LanguagePack.English.targets'))" />
-    <Error Condition="!Exists('..\packages\Kentico.AspNet.Mvc.12.0.71\build\Kentico.AspNet.Mvc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.AspNet.Mvc.12.0.71\build\Kentico.AspNet.Mvc.targets'))" />
-    <Error Condition="!Exists('..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets'))" />
+    <Error Condition="!Exists('..\packages\Kentico.LanguagePack.English.12.0.79\build\Kentico.LanguagePack.English.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.LanguagePack.English.12.0.79\build\Kentico.LanguagePack.English.targets'))" />
+    <Error Condition="!Exists('..\packages\Kentico.AspNet.Mvc.12.0.79\build\Kentico.AspNet.Mvc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.AspNet.Mvc.12.0.79\build\Kentico.AspNet.Mvc.targets'))" />
+    <Error Condition="!Exists('..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets'))" />
   </Target>
-  <Import Project="..\packages\Kentico.LanguagePack.English.12.0.71\build\Kentico.LanguagePack.English.targets" Condition="Exists('..\packages\Kentico.LanguagePack.English.12.0.71\build\Kentico.LanguagePack.English.targets')" />
-  <Import Project="..\packages\Kentico.AspNet.Mvc.12.0.71\build\Kentico.AspNet.Mvc.targets" Condition="Exists('..\packages\Kentico.AspNet.Mvc.12.0.71\build\Kentico.AspNet.Mvc.targets')" />
-  <Import Project="..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets" Condition="Exists('..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.2.1\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets')" />
+  <Import Project="..\packages\Kentico.LanguagePack.English.12.0.79\build\Kentico.LanguagePack.English.targets" Condition="Exists('..\packages\Kentico.LanguagePack.English.12.0.79\build\Kentico.LanguagePack.English.targets')" />
+  <Import Project="..\packages\Kentico.AspNet.Mvc.12.0.79\build\Kentico.AspNet.Mvc.targets" Condition="Exists('..\packages\Kentico.AspNet.Mvc.12.0.79\build\Kentico.AspNet.Mvc.targets')" />
+  <Import Project="..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets" Condition="Exists('..\packages\Kentico.EMS12.MvcComponents.Widget.RichText.1.3.0\build\Kentico.EMS12.MvcComponents.Widget.RichText.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

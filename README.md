@@ -4,7 +4,7 @@ Our Kentico 12 Baseline Site, the perfect starting point for your Kentico 12 MVC
 ***
 
 # Installation
-Install a normal Kentico MVC Site, and hotfix it up to the current Hotfix of this project (12.0.71)
+Install a normal Kentico MVC Site, and hotfix it up to the current Hotfix of this project (12.0.79)
 ## Install NuGet Packages
 On the Kentico Admin (WebApp/Mother) solution, install the following NuGet Packages
 1. [DynamicRouting.Kentico](https://www.nuget.org/packages/DynamicRouting.Kentico)
