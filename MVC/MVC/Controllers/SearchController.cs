@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml;
 
 namespace Generic.Controllers
 {
@@ -29,8 +30,23 @@ namespace Generic.Controllers
             };
             if (!string.IsNullOrWhiteSpace(SearchValue))
             {
-                var searchParameters = SearchParameters.PrepareForPages(SearchValue, new[] { "SiteSearch" }, 1, 100, MembershipContext.AuthenticatedUser);
+                // Should have 2 search index, a page crawler typed search index (that grabs the content rendered on the page) and a Pages typed search index (that grabs document's field data marked as "content" in the Search settings of that page type)
+                var searchParameters = SearchParameters.PrepareForPages(SearchValue, new[] { "SiteSearch_Crawler", "SiteSearch_Pages" }, 1, 100, MembershipContext.AuthenticatedUser);
                 var Search = SearchHelper.Search(searchParameters);
+
+                // Special logic to handle Component - Page Metadata descriptions, will use this if present, otherwise uses content.
+                foreach (var item in Search.Items)
+                {
+                    if (item.Data.GetStringValue("Component_PageMetadata", "").IndexOf("<Description>", StringComparison.InvariantCultureIgnoreCase) != -1)
+                    {
+                        XmlDocument MetaData = new XmlDocument();
+                        MetaData.LoadXml(item.Data.GetStringValue("Component_PageMetadata", ""));
+                        string PageDescription = MetaData.SelectSingleNode("//Description").InnerText;
+                        // If we have the page metadata description, use it over content.
+                        item.Content = !string.IsNullOrWhiteSpace(PageDescription) ? PageDescription : item.Content;
+                    }
+                }
+
                 Model.SearchItems = Search.Items;
                 mPagesActivityLogger.LogInternalSearch(SearchValue);
             }

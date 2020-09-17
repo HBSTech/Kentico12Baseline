@@ -34,6 +34,41 @@ namespace Generic
 
             // Form modification hook in case you need it
             // FormFieldRenderingConfiguration.GetConfiguration.Execute += GetConfiguration_Execute;
+
+            // Page crawler modification
+            DocumentEvents.GetContent.Execute += GetContent_Execute;
+        }
+
+        /// <summary>
+        /// For Crawlers, only include content found within the CONTENTSTART and CONTENTEND tags, excluding any of the EXCLUDEDSTART to EXCLUDEDEND hidden spans
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GetContent_Execute(object sender, DocumentSearchEventArgs e)
+        {
+            if (e.IsCrawler)
+            {
+                string content = e.Content;
+
+                if (content.Contains("CONTENTSTART"))
+                {
+                    content = content.Substring(content.IndexOf("CONTENTSTART") + 12);
+                }
+                if (content.Contains("CONTENTEND"))
+                {
+                    content = content.Substring(0, content.IndexOf("CONTENTEND"));
+                }
+                while (content.Contains("EXCLUDESTART"))
+                {
+                    string ExcludePortion = content.Substring(content.IndexOf("EXCLUDESTART"));
+                    if (ExcludePortion.Contains("EXCLUDEEND"))
+                    {
+                        ExcludePortion = ExcludePortion.Substring(0, ExcludePortion.IndexOf("EXCLUDEEND") + 10);
+                    }
+                    content = content.Replace(ExcludePortion, "");
+                }
+                e.Content = content;
+            }
         }
 
         private void GetConfiguration_Execute(object sender, GetFormFieldRenderingConfigurationEventArgs e)

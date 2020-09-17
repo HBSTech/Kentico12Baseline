@@ -41,7 +41,10 @@
         @{Html.RenderAction("RenderNavigation", "Header");}
     </header>
 
+    <!-- These tags are for the search crawler, so the header/footer are excluded from search terms -->
+    <span style="display:none">CONTENTSTART</span>
     @RenderBody()
+    <span style="display:none">CONTENTEND</span>
 
     @Html.PartialWidgetPage("/Masterpage/Footer", PathIsNodeAliasPath: true, stripSession: false)
     @{OutputCacheHelper.AddCacheDependency($"node|{OutputCacheHelper.CurrentSiteName()}|/Masterpage/Footer"); }
