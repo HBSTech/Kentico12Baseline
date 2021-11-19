@@ -3,6 +3,12 @@ Our Kentico 12 Baseline Site, the perfect starting point for your Kentico 12 MVC
 
 ***
 
+# Upgrading Baseline to KX13
+If you have a Baseline KX12 site and are going to KX13, it is recommended that after you upgrade your KX12 instance, that you start with the base KX13 Baseline site and just add in the customization / html.  The differences of MVC5 and .net 5 MVC (core) are pretty large.  Many elements are 1 to 1, but the structure requires a complete start over.
+
+## Before you Upgrade
+the Kentico12Baseline uses the [Dynamic Routing](https://github.com/KenticoDevTrev/DynamicRouting) Module, please read that module's upgrade instructions in order to preserve your URLs.  You will need to run some scripts to fix the Generic.Folder page type so it will properly be handled during upgrade.  Instructions and links on the Dynamic Routing Page.
+
 # Installation
 Install a normal Kentico MVC Site, and hotfix it up to the current Hotfix of this project (12.0.79)
 ## Install NuGet Packages
